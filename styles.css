@@ -1,0 +1,27 @@
+p{
+    margin: 0;
+}
+
+main{
+    display: flex;
+    height: 98vh;
+}
+section{
+    outline: solid black;
+    flex: 1;
+}
+
+#logo-section{
+    flex: 0.5;
+}
+
+#signup-section{
+    display: flex;
+    flex-direction: column;
+}
+
+p,
+div{
+    outline: dashed black;
+    flex: 1;
+}
