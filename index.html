@@ -14,12 +14,41 @@
                <img id="odin-logo" src="images/odin-lined.png">
                <span>ODIN</span>
            </div>
-           <p id="photo-cred">Photo by Halle West on Unplash</p>
+           <footer>Photo by Halle West on Unplash</footer>
        </section>
        <section id="signup-section">
-           <p>Dummy Data</p>
-           <div id="form-div">Dummy Data</div>
-           <div id="account-div">Dummy Data</div>
+           <div id="pitch-div" class="div-style-1">
+               <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. <br>Sign up <em>now</em> to get started. <br><br>You <em>know</em> you want to.</p>
+           </div>
+           <div id="form-div">
+           <p>Let's do this!</p>
+               <form id="create-account-fom" action="#" method="post">
+                <ul>
+                    <li>
+                        <label for="first-name">FIRST NAME</label>
+                        <input type="text" id="first-name" name="first-name">
+                        <label for="last-name">LAST NAME</label>
+                        <input type="text" id="last-name" name="last-name">
+                    </li>
+                    <li>
+                        <label for="email">EMAIL</label>
+                        <input type="email" id="email" name="email" placeholder="example@email.com">
+                        <label for="phone">PHONE NUMBER</label>
+                        <input type="tel" id="phone" name="phone">
+                    </li>
+                    <li>
+                        <label for="password">PASSWORD</label>
+                        <input type="password" id="password" name="password">
+                        <label for="confirm-password">CONFIRM PASSWORD</label>
+                        <input type="password" id="confirm-password" name="confirm-password">
+                    </li>
+                </ul>
+               </form>
+           </div>
+           <div id="account-div" class="div-style-1">
+               <button id="create-account-button">Create Account</button>
+               <p>Already have an account? Log in</p>
+           </div>
        </section>
    </main>
 </body>
