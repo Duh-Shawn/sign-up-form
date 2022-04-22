@@ -14,7 +14,7 @@ p{
 
 main{
     display: flex;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 #logo-section{
@@ -145,6 +145,10 @@ input{
     height: 19px;
 }
 
+input:focus{
+    color: green;
+}
+
 button{
     margin-left: 50px;
     margin-top: 35px;
@@ -162,5 +166,5 @@ button{
 #account-div p{
     font-size: 16px;
     margin-top: 35px;
-    margin-bottom: 0;
+    margin-bottom: 16px;
 }
