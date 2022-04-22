@@ -5,6 +5,7 @@
 
 ul,
 h1,
+html,
 body,
 p{
     margin: 0;
@@ -15,21 +16,18 @@ main{
     display: flex;
     height: 100vh;
 }
-section{
-    /* outline: solid black; */
-    flex: 1;
-}
 
 #logo-section{
-    background-image: url(images/halie-west-UWni0vqQotc-unsplash.jpg);
+    background-image: url(images/halie-west-UWni0vqQotc-unsplash-2.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
-    flex: 0.675;
+    background-size: 100% 100%;
+    width: 40vw;
     display: flex;
     flex-direction: column;
 }
 
 #signup-section{
+    width: 60vw;
     display: flex;
     flex-direction: column;
 }
@@ -41,6 +39,7 @@ div{
 }
 
 #logo-container{
+    flex: 0;
     width: 100%;
     height: 200px;
     color: white;
@@ -48,7 +47,9 @@ div{
     justify-content: center;
     font-family: odin-norse;
     font-size: 80px;
-    margin-top: 150px;
+    background-color: rgba(0, 0, 0, 0.44);
+    position: relative;
+    top: 225px;
 }
 
 span{
@@ -65,12 +66,12 @@ span{
 }
 
 footer{
-    flex: 0;
     text-align: center;
     color: white;
     margin-bottom: 16px;
     font-size: 16px;
     opacity: 0.2;
+    margin-top: auto;
 }
 
 .div-style-1{
@@ -80,6 +81,7 @@ footer{
 #pitch-div{
     display: flex;
     align-items: flex-end;
+    width: 100%;
 }
 
 p{
@@ -98,10 +100,13 @@ p{
 #form-container{
     display: flex;
     flex-direction: column;
+    box-shadow: 0px 3px 3px #515151;;
+    position: relative;
 }
 
 form{
     margin-left: 50px;
+    margin-right: 50px;
     display: flex;
     flex-direction: column;
     flex: 1;
@@ -117,6 +122,7 @@ form{
 #row-container{
     display: flex;
     flex-direction: column;
+    margin-bottom: 35px;
 }
 
 .row-wrapper{
@@ -126,6 +132,7 @@ form{
 }
 
 .row-item{
+    flex: 1;
     display: flex;
     flex-direction: column;
 }
@@ -135,7 +142,6 @@ label{
 }
 
 input{
-    width: 500px;
     height: 19px;
 }
 
