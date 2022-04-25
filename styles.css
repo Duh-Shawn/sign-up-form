@@ -1,3 +1,8 @@
+:root{
+    --accent-color: rgba(162,125,71,255);
+    --error-color: red;
+}
+
 @font-face {
     font-family: odin-norse;
     src: url(fonts/Norse-Bold.otf);
@@ -34,7 +39,6 @@ main{
 
 p,
 div{
-    /* outline: dashed black; */
     flex: 1;
 }
 
@@ -112,7 +116,7 @@ form{
     flex: 1;
 }
 
-#form-container p{
+#motivation{
     margin-left: 0px;  
     margin-top: 35px;
     margin-bottom: 35px;
@@ -146,7 +150,9 @@ input{
 }
 
 input:focus{
-    color: green;
+    outline: solid;
+    box-shadow: 0 0 10px var(--accent-color);
+    outline-color: var(--accent-color);
 }
 
 button{
@@ -160,11 +166,22 @@ button{
     border: 0;
     border-radius: 5px;
     color: black;
-    background-color: rgba(162,125,71,255);
+    background-color: var(--accent-color);
 }
 
 #account-div p{
     font-size: 16px;
     margin-top: 35px;
     margin-bottom: 16px;
+}
+
+
+#password-error{
+    margin: 0;
+    font-size: 10px;
+    color:  var(--error-color);
+}
+
+.error{
+    border-color: var(--error-color);    
 }

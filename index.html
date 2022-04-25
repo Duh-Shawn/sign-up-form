@@ -22,7 +22,7 @@
            </div>
            <div id="form-container">
                <form id="create-account-form" action="#" method="post">                
-                <p>Let's do this!</p>
+                <p id="motivation">Let's do this!</p>
                 <div id="row-container">
                     <div class="row-wrapper">
                         <div class="row-item">
@@ -36,7 +36,7 @@
                     </div>
                     <div class="row-wrapper">
                         <div class="row-item">
-                            <label for="email">EMAIL</label>
+                            <label for="email">EMAIL *</label>
                             <input type="email" id="email" name="email" placeholder="example@email.com" required>
                         </div>
                         <div class="row-item">
@@ -46,12 +46,13 @@
                     </div>
                     <div class="row-wrapper">
                         <div class="row-item">
-                            <label for="password">PASSWORD</label>
-                            <input type="password" id="password" name="password" required>
+                            <label for="password">PASSWORD *</label>
+                            <input class="error" type="password" id="password" name="password" required>
+                            <p id="password-error">* Passwords do not match</p>
                         </div>
                         <div class="row-item">
-                            <label for="confirm-password">CONFIRM PASSWORD</label>
-                            <input type="password" id="confirm-password" name="confirm-password" required>
+                            <label for="confirm-password">CONFIRM PASSWORD *</label>
+                            <input class="error" type="password" id="confirm-password" name="confirm-password" required>
                         </div>  
                     </div>
                 </div>
